@@ -30,3 +30,7 @@ El proceso de diseño de Figma fué tardado, porque se hizo prueba de su funcion
 Según la sugerencia del usuario, se agrego un botón de regresar a la vista principal para poder modificar su nombre, cuando este estaba mal escrito; también, se agregó un link para salir mediante el desarrollo de las preguntas.
 
 [![Botones agregados](https://github.com/Eunice17/trivia-Desaf-o/blob/master/img/addBoton.PNG "Botones agregados")](https://github.com/Eunice17/trivia-Desaf-o/blob/master/img/addBoton.PNG "Diseño final")
+
+Se puede visualizar el proyecto en este link
+
+https://trivia-desaf-o.vercel.app/index.html
