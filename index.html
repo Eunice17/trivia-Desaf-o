@@ -1,0 +1,47 @@
+<!-- https://www.youtube.com/watch?v=1jybppCJBEI -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>¡Desafío!</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="title" id="title">¡Desafío!</h1>
+    </header>
+    <main class="main">
+        <div class="card">
+            <div class="header-card">
+                <div>
+                    <p><span class="card-title">Bienvenido</span> a Desafio, donde podrá repasar lo aprendido ¡las veces que quieras!</p>
+                </div>
+                <div>
+                    <label for="">Ingrese su nombre para empezar a jugar</label>
+                    <input type="text" class="input-name" id="name">
+                </div>
+            </div>
+            <div style="width: 100%;">
+                <img src="img/question.svg" alt="" width="100%" height="150">
+            </div>
+            <div>
+                <button class="iniciar"><a onclick="inicio()" class="inicio">Iniciar</a></button>
+            </div>
+        </div>
+    </main>
+    <script>
+
+        function inicio() {
+            var nombre = document.querySelector("#name").value;
+            var value = {
+                "nombre": nombre
+            };
+            console.log(nombre);
+            localStorage.setItem("value", JSON.stringify(value));
+            window.location.href="name.html";
+        }
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+.header-rs{
+    justify-content: center;
+    text-align: center;
+}
+.header-rs >div{
+    margin-bottom: 10px;
+}
+.head-rs{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.msg{
+    font-weight: bold;
+    color: #7209B7;
+}
+.btn-rs{
+    display: flex;
+    grid-gap: 40px;
+    
+}
+.btn-rs .btn-salir{
+    background-color: #BA181B;
+}
