@@ -90,10 +90,15 @@ const printFirst=(indice)=>{
  }
  
  function mostrarR(){
-     let totalA=resultados();
-     rst.innerHTML=`<span><span id="rs-final">${totalA}</span> de <span id="pg-total">${preguntas.length}</span> preguntas correctas</span>
-     <br/><br/><button class="iniciar boton-u"><a class="inicio" href="index.html">Volver a jugar</a></button>`;
+    let totalA=resultados();
+     let valorR={
+         "resultado":totalA,
+         "preguntas":preguntas,
+         "alternativas":alternativas,
+         "respuestas":respuestas,
+         "respuestaUser":arrayResp
+     };
+     localStorage.setItem("valorR",JSON.stringify(valorR));
+     window.location.href="resultados.html";
     
  }
-
-
