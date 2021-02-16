@@ -19,7 +19,7 @@
                 </div>
                 <div>
                     <label for="">Ingrese su nombre para empezar a jugar</label>
-                    <input type="text" class="input-name" id="name">
+                    <input type="text" autofocus class="input-name" id="name">
                 </div>
             </div>
             <div style="width: 100%;">
@@ -33,13 +33,16 @@
     <script>
 
         function inicio() {
-            var nombre = document.querySelector("#name").value;
-                var value = {
+            const nombre = document.querySelector("#name").value;
+            if (nombre.length > 0) {
+                const value = {
                     "nombre": nombre
                 };
-                console.log(nombre);
                 localStorage.setItem("value", JSON.stringify(value));
                 window.location.href="name.html";
+            }else{
+                alert("Ingrese un nombre o apodo por favor!!");
+            }
         }
     
     </script>
