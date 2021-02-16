@@ -58,28 +58,27 @@ const printFirst=(indice)=>{
     form.innerHTML=cad;
     cont++;
  };
- function trivia(){
+ const trivia = () => {
     if(cont<preguntas.length){
         printFirst(cont);
      }else{
          enviar();
      } 
  };
- //LLama a trivia la primera pregunta
+ // LLama a trivia la primera pregunta
  trivia();
 
-
- function activar(){
+ activar = () => {
      arrayResp.push(form.value);
     trivia();
  };
 
- function enviar(){
+ enviar = () => {
      enviarBoton.innerHTML=`<button onclick="mostrarR()"
       class="iniciar boton-u">Mostrar resultados</button>`;
  };
   
- function resultados(){
+ resultados = () => {
      let aciertos=0;
      for(let i=0;i<respuestas.length;i++){
         if(respuestas[i]==arrayResp[i]){
@@ -89,7 +88,7 @@ const printFirst=(indice)=>{
      return aciertos;
  }
  
- function mostrarR(){
+ mostrarR= () => {
      let totalA=resultados();
      let valorR={
          "resultado":totalA,
@@ -100,5 +99,4 @@ const printFirst=(indice)=>{
      };
      localStorage.setItem("valorR",JSON.stringify(valorR));
      window.location.href="resultados.html";
-    
  }
