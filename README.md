@@ -6,7 +6,7 @@ Desafío es un juego lúdico, donde el usuario puede retarse mediante la modalid
 
 **Objetivo**
 
-> Potenciar las habilidades de la memoria a corto, mediano y largo plazo.Potenciar las habilidades de la memoria a corto, mediano y largo plazo.
+> Potenciar las habilidades de la memoria a corto, mediano y largo plazo.
 
 
 **Proceso de diseño**
