@@ -39,23 +39,22 @@ a{
 }
 .main{
     width: 100%;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 15px 0px 15px;
     display:flex;
     justify-content:center;
     align-items: center;
 }
 .card{
+    max-width: 450px;
     border-radius: 10px;
-    /*margin: 0px 15px 0px 15px;*/
     padding: 40px 30px 10px 30px;
-    transform: translateY(-80px);
+    margin-top: -85px;
     box-shadow: -8px 8px 30px rgba(0, 0, 0, 0.5);
     background-color: #FFFFFF;
     font-family: 'Comic Neue', cursive;
     color: #565c69;
 }
 .card > div{
-    /*flex-direction: column;*/
     margin-bottom: 40px;
 }
 .card .header-card{
@@ -110,35 +109,3 @@ a{
         width: 450px;
     }
 }
-/*@media(max-width:360px){
-    .card{
-        
-        transform: translateY(-60px);
-    }
-}
-
-@media(min-width:1024px){
-    .card{
-        transform: translateY(-120px);
-    }
-    .header{
-        width: 100%;
-        height: 40vh;
-        padding: 110px 120px 40px 120px;
-        background-color: #3A0CA3;
-    }
-}
-
-@media(min-width:1024px){
-    .main{
-        width: 100%;
-        padding: 0px 250px 0px 250px;
-    }
-    .header{
-        width: 100%;
-        height: 40vh;
-        padding: 290px 120px 40px 150px;
-        background-color: #3A0CA3;
-    }
-}
-*/
