@@ -15,7 +15,7 @@
     width: 100%;
     font-family: 'Comic Neue', cursive;
     border-color: rgb(228, 228, 228);
-    outline: none;
+    appearance: none;
     -webkit-appearance: none;
 }
 .form::-webkit-scrollbar {
