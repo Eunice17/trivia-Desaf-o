@@ -52,6 +52,7 @@ const printFirst=(indice)=>{
     pgs.innerHTML=preguntas[indice];      //Agregando la pregunta al card
     
     let cad="";
+    cad+=`<option class="op" disabled selected value="Select">Selecciona alternativa</option><br/>`;
     for(let i=0;i<alternativas[indice].length;i++){
     cad+=`<option class="op" value=${i}>${alternativas[indice][i]}</option><br/>`;
 }
