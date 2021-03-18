@@ -41,7 +41,7 @@ const enviarBoton=document.getElementById('enviar'); //Botón para mostrar resul
 const rst=document.getElementById('rst'); //elemento que mostrará los resultados de la trivia en la card
 
 // nombre de la persona
-titulo.innerHTML = "Hola " + persona.nombre; //Agrega el nombre de usuario como título
+titulo.innerHTML = "Hello " + persona.nombre; //Agrega el nombre de usuario como título
 
 let cont=0;
 let arrayResp=new Array(); //Necesito un array para almacenar las respuestas de usuario
