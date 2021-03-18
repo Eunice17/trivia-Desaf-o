@@ -1,20 +1,20 @@
 
 const preguntas=[
-    "¿En qué fecha se proclamó la independencia del Perú?",
-    "¿Cuál es la primera universidad del Perú?",
-    "¿Cuál fue el mayor imperio precolombino situado en partes de Perú?",
-    "¿Qué español lideró la expedición que iniciaría la conquista del Perú?",
-    "¿Quién fue el último soberano inca?",
-    "¿Qué virrey del Perú era conocido como El Solón Virreinal?",
-    "¿Quién encabezó la Expedición Libertadora del Perú en el siglo XIX?",
-    "¿En dónde proclamó José de San Martín la independencia de Perú?",
-    "¿Quién fue el primer presidente de la República del Perú?",
-    "¿En qué batalla murió el presidente peruano Agustín Gamarra en 1841?"
+    "What date was the independence of Peru proclaimed?",
+    "What is the first university in Peru?",
+    "What was the largest pre-Columbian empire located in parts of Peru?",
+    "Which Spanish led the expedition that began the conquest of Peru?",
+    "Who was the last Inca sovereign?",
+    "What viceroy of Peru was known as El Solón Virreinal?",
+    "Who led the Liberation Expedition of Peru in the 19th century?",
+    "Where did José de San Martín proclaim the independence of Peru?",
+    "Who was the first president of the Republic of Peru?",
+    "What battle did Peruvian President Agustín Gamarra die in 1841?"
 ];
 const alternativas=[
-    ["12 de julio de 1820","28 de julio de 1821","28 de junio de 1821","20 de julio de 1821"],
-    ["Universidad César Vallejo","Universidad Nacional Agraria La Molina","Universidad de Lima","Universidad Nacional Mayor de San Marcos"],
-    ["Imperio Chimú","Imperio Inca","Imperio Vicús","Imperio Otomano"],
+    ["July 12, 1820","July 28, 1821","June 28, 1821","July 20, 1821"],
+    ["César Vallejo University","La Molina National Agrarian University","Lima University","National University of San Marcos"],
+    ["Chimu Empire","Inca Empire","Vicús Empire","Ottoman Empire"],
     ["Francisco Pizarro","Francisco Pérez","Francisco García","Francisco Sánchez"],
     ["Tupac Amaru II","Sinchi Roca","Atahualpa","Mama Occllo"],
     ["Francisco de Toledo","Francisco Pizarro","Eduardo de Toledo","Emiliano de Toledo"],
@@ -76,7 +76,7 @@ const printFirst=(indice)=>{
 
  function enviar(){
      enviarBoton.innerHTML=`<button onclick="mostrarR()"
-      class="iniciar boton-u">Mostrar resultados</button>`;
+      class="iniciar boton-u">Show results</button>`;
  };
   
  function resultados(){

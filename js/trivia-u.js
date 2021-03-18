@@ -1,27 +1,27 @@
 
 const preguntas=[
-    "¿En qué fecha se descubrió América?",
-    "¿En qué fecha terminó la Primera Guerra Mundial?",
-    "¿En dónde se originaron los Juegos Olimpicos?",
-    "¿En qué país nació Adolf Hitler?",
-    "¿En qué lugar murió Napoleón?",
-    "¿Quiénes lucharon en la denominada Batalla de Maratón?",
-    "¿En qué fecha empezó la Segunda Guerra Mundial?",
-    "¿En qué guerra participó Juana de Arco?",
-    "¿Qué esposas de Enrique VIII fueron decapitadas?",
-    "¿Qué emperador romano legalizó el cristianismo y puso fin a la persecución de los cristianos?"
+    "What date was America discovered?",
+    "What date did the first world war end?",
+    "Where did the Olympic games originate?",
+    "Which country was Adolf Hitler born?",
+    "Where did Napoleon die?",
+    "Who fought in the so called Battle of Marathon?",
+    "What date did World War II start?",
+    "Which war did Joan of Arc participate?",
+    "What wives of Henry VIII were beheaded?",
+    "Which Roman Emperor legalized Christianity and ended the persecution of Christians?"
 ];
 const alternativas=[
-    ["12 de octubre de 1493","12 de octubre de 1492","6 de octubre de 1943","12 de febrero de 1942"],
-    ["11 de noviembre de 1918","11 de diciembre de 1918","11 de noviembre de 1919","12 de noviembre de 1918"],
-    ["En Polonia","En Rusia","En Grecia","En Perú"],
-    ["Alemania","Israel","Rusia","Austria"],
-    ["En la isla de Ibiza ","En la Isla de Santa Elena","En las islas Galápagos","En su casa"],
-    ["Griegos y Persas","Alemanes y Griegos","Turcos y Persas","Griegos y Turcos"],
-    ["1 de noviembre de 1939","2 de septiembre de 1939","1 septiembre de 1939","12 de febrero de 1997"],
-    ["En la guerra de los 100 años","En la batalla de Maratón","En la guerra de los 90 años","En la guerra de los 101 años"],
-    ["Ana Bolena y Catalina de Aragón","Ana de Cléveris y Ana Bolena","Catalina Howard y Catalina Parr","Ana Bolena y Catherine Howard"],
-    ["Emperador Nerón","Emperador Adriano","Emperador Trajano","Emperador Constantino"]
+    ["October 12, 1493","October 12, 1492","October 6, 1943","February 12, 1942"],
+    ["November 11, 1918","December 11, 1918","November 11, 1919","November 12, 1918"],
+    ["In Poland","In Russia","In Greece","In Peru"],
+    ["Germany","Israel","Russia","Austria"],
+    ["On the island of Ibiza","On St. Helena island","In the Galapagos islands","In his house"],
+    ["Greeks and Persians","Germans and Greeks","Turks and Persians","Greeks and Turks"],
+    ["November 1, 1939","September 2, 1939","September 1, 1939","February 12, 1997"],
+    ["In the 100 years war","In the Battle of Marathon","In the 90 years war","In the 101 year war"],
+    ["Ana Bolena and Catalina de Aragón","Ana de Cléveris and Ana Bolena","Catalina Howard and Catalina Parr","Anne Boleyn and Catherine Howard"],
+    ["Emperor nero","Emperor Hadrian","Emperor Trajan","Emperor constantine"]
 ];
 const respuestas=[
     1,0,2,3,1,0,2,0,2,3
@@ -52,7 +52,7 @@ const printFirst=(indice)=>{
     pgs.innerHTML=preguntas[indice];      //Agregando la pregunta al card
     
     let cad="";
-    cad+=`<option class="op" disabled selected value="Select">Selecciona alternativa</option><br/>`;
+    cad+=`<option class="op" disabled selected value="Select">Select alternative</option><br/>`;
     for(let i=0;i<alternativas[indice].length;i++){
     cad+=`<option class="op" value=${i}>${alternativas[indice][i]}</option><br/>`;
 }
@@ -76,7 +76,7 @@ const printFirst=(indice)=>{
 
  enviar = () => {
      enviarBoton.innerHTML=`<button onclick="mostrarR()"
-      class="iniciar boton-u">Mostrar resultados</button>`;
+      class="iniciar boton-u">Show results</button>`;
  };
   
  resultados = () => {
